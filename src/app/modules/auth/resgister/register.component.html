@@ -1,0 +1,82 @@
+<Gridlayout>
+    <Gridlayout class="background"></Gridlayout>
+    <!-- Contenedor Principal -->
+    <Docklayout style="padding: 25;">
+        <Stacklayout dock="top">
+            <Label class="title" text="Sign Up"></Label>
+            <!-- Caja de Sign Up -->
+            <Stacklayout marginTop="1%" class="white-box">
+                <Label 
+                    style="color:#00ba40;margin-top:15" 
+                    class="title-login big" 
+                    text="Lets Join Us"
+                ></Label>
+                <Label 
+                    style="color:#00ba40"
+                    class="title-login small"
+                    text="We would love you to join up"
+                ></Label>
+
+                <Flexboxlayout 
+                    justifyContent="center"
+                    style="margin-bottom: 15;margin-top:15;">
+                    <Button
+                        style="margin-right: 15%;" 
+                        class="button-outline google"
+                    ></Button>
+                    <Button class="button-outline facebook"></Button>
+                </Flexboxlayout>
+
+                <Label
+                    style="color:#FF4F9A"
+                    class="title-login small"
+                    opacity="0.4"
+                    text="We have multiple options for you to join us"
+                ></Label>
+
+                <TextField 
+                    class="tf-gray user-green"
+                    style="margin-left: 10;margin-right: 10;"
+                    hint="Nombre"
+                ></TextField>
+                <TextField 
+                    class="tf-gray email-green"
+                    style="margin-left: 10;margin-right: 10;"
+                    hint="Username Or Email Address"
+                    keyboardType="email"
+                    autocapitalizationType="none"
+                ></TextField>
+                <TextField 
+                    class="tf-gray password-green"
+                    style="margin-left: 10;margin-right: 10;"
+                    hint="Password"                    
+                    secure="true"
+                ></TextField>
+
+                <Button 
+                    style="margin-bottom: 15;margin-top: 2;" 
+                    class="button button-second arrow"
+                ></Button>
+
+            </Stacklayout>
+        </Stacklayout>
+
+        <Gridlayout dock="bottom" columns="*, *">
+                <Button 
+                    class="button button-three" 
+                    backgroundColor="white"
+                    col="0" 
+                    text ="Sign In"
+                    nsRouterLink="/"
+                ></Button>
+                <Button 
+                    color="white"
+                    class="button button-second"                     
+                    col="1"
+                    text="Sign Up"
+                    nsRouterLink="/register"
+                ></Button>
+        </Gridlayout>
+
+    </Docklayout>
+</Gridlayout>        

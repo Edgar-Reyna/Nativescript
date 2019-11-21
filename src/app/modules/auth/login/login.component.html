@@ -1,0 +1,47 @@
+<Gridlayout>
+    <Gridlayout class="background"></Gridlayout>
+    <Docklayout style="padding: 25">
+        <Stacklayout dock="top">
+            <Label class="title" text="Sing In"></Label>
+            <Stacklayout marginTop="1%" class="white-box">
+                <Image style="margin-top: -150;" src="res://salad"></Image>
+                <label text="Welcome Back" class="title-login big"></label>
+                <label text="We love to see you again" class="title-login small"></label>
+                <TextField 
+                    class="tf-gray user"
+                    style="margin-left: 10;margin-right: 10;"
+                    hint="Username Or Email Address"
+                    keyboardType="email"
+                    autocapitalizationType="none"
+                    >
+                </TextField>
+                <TextField 
+                    class="tf-gray password"
+                    style="margin-left: 10;margin-right: 10;"
+                    hint="Password"                    
+                    secure="true"
+                    >
+                </TextField>
+                <Button 
+                    nsRouterLink="/home/restaurants"
+                    style="margin-bottom: 15;margin-top: 2;" 
+                    class="button button-one arrow">
+                </Button>
+            </Stacklayout>
+        </Stacklayout>
+        <Gridlayout dock="bottom" columns="*, *">
+            <Button 
+                class="button button-one" 
+                col="0" 
+                text ="Sign In">                
+            </Button>
+            <Button 
+                class="button button-three" 
+                backgroundColor="white" 
+                col="1"
+                text="Sign Up"
+                nsRouterLink="/register"
+            ></Button>
+        </Gridlayout>
+    </Docklayout>
+</Gridlayout>
